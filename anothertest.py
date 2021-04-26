@@ -1,3 +1,6 @@
+import math
+
+
 def is_unique(s):
     s = list(s)
     s.sort()
@@ -9,5 +12,10 @@ def is_unique(s):
         return 1
 
 
+def func1(s):
+    return math.sqrt(s)
+
+
 if __name__ == "__main__":
-    print(is_unique(input()))
+    print(is_unique(input("Input a number ")))
+    print(func1(9))
